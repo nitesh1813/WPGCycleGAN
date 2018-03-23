@@ -10,6 +10,8 @@ bash ./datasets/download_cyclegan_dataset.sh apple2orange
 
 Flags to setup wgan are available in models/cycle_gan_model.py. These are set to enable WGAN by default with the bounds for clamping as -0.01, 0.01 (controlled by params: wgan_upbound and wgan_lowbound). 
 
+run python -m visdom.server before train/test
+
 #### Train Model: 
 
 python train.py --dataroot ./datasets/apple2orange --name anyname --model cycle_gan --no_dropout
@@ -34,5 +36,11 @@ python train.py --dataroot ./datasets/apple2orange --name anyname --model cycle_
 
 ## Acknowledgments
 Code is inspired by [Image-to-image translation in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+
+
+##Dependencies
+Pytorch
+Dominate
+Visdom
 
 
