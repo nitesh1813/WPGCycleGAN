@@ -18,7 +18,7 @@ python train.py --dataroot ./datasets/apple2orange --name anyname --model cycle_
 
 python test.py --dataroot ./datasets/apple2orange --name anyname --model cycle_gan --phase test --no_dropout
 
-######3 Cycle train:
+## Running Cycle GAN
 Rename train_options_cycle to train_options in the options folder. 
 Rename base_options_cycle to train_options in the options folder. 
 Rename cycle_gan_model_cycle to cycle_gan_model in the models folder
