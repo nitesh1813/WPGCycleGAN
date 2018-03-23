@@ -1,8 +1,18 @@
-<img src='imgs/horse2zebra.gif' align="right" width=384>
 
 <br><br><br>
 
 # WGAN with CycleGAN
+Steps to run the WGAN with horse2zebra dataset
+bash ./datasets/download_cyclegan_dataset.sh horse2zebra
+
+Parameters:
+Flags to setup wgan are available in models/cycle_gan_model.py. These are set to enable WGAN by default with the bounds for clamping as -0.01, 0.01 (controlled by params: wgan_upbound and wgan_lowbound). 
+
+Train Model: 
+python train.py --dataroot ./datasets/horse2zebra --name wgan --model cycle_gan --no_dropout
+
+Test Model: 
+python test.py --dataroot ./datasets/horse2zebra --name wgan --model cycle_gan --phase test --no_dropout
 
 # CycleGAN and pix2pix in PyTorch
 
