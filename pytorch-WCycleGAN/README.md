@@ -38,7 +38,7 @@ python train.py --dataroot ./datasets/apple2orange --name anyname --model cycle_
 Code is inspired by [Image-to-image translation in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
 
 
-##Dependencies
+## Dependencies
 Pytorch
 Dominate
 Visdom
