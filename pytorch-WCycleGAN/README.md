@@ -1,7 +1,7 @@
 
 <br><br><br>
 
-# WGAN with CycleGAN
+# Improvements on CycleGAN
 Steps to run the WGAN with horse2zebra dataset
 
 bash ./datasets/download_cyclegan_dataset.sh apple2orange
